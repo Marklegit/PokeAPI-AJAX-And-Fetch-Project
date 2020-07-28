@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PokéAPI Project</title>
+    <link rel="icon" type="image/png" href="images/pokeball-PNG-2d.png">
+	<meta name="Author" content="This is a project using the PokéApi. All Pokémon from generation 1 to generation 7. 807 Pokémon Total. Kanto, Johto, Hoenn, Sinnoh, Unova, Kalos, and Alola. Search Pokémon and their other forms like mega forms!"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gelasio&display=swap&family=Squada+One&display=swap&family=IM+Fell+French+Canon+SC&display=swap&family=Lateef&display=swap&family=Gelasio&display=swap&family=Cairo:wght@300&display=swap&family=Odibee+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+<div id="hamburger-menu">
+	<div class="menu-container">
+		<div class="lines-container">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</div>
+	<ul id="main-navbar">
+		<li><a href="#" id="active-link">All Pokémon</a></li>
+		<li><a href="search.html">Search</a></li>
+		<li><a href="about.html">About</a></li>
+	</ul>
+</div>
+<div id="sticky-container">
+	<div id="pokemon-pokedex-region-container" class="tabs">
+	
+		<button data-tab-target="#pokemon-pokedex-kanto" id="pokedex-kanto" class="active tab">Kanto</button>
+		
+		<button data-tab-target="#pokemon-pokedex-johto" id="pokedex-johto" class="tab">Johto</button>
+		
+		<button data-tab-target="#pokemon-pokedex-hoenn" id="pokedex-hoenn" class="tab">Hoenn</button>
+		
+		<button data-tab-target="#pokemon-pokedex-sinnoh" id="pokedex-sinnoh" class="tab">Sinnoh</button>
+		
+		<button data-tab-target="#pokemon-pokedex-unova" id="pokedex-unova" class="tab">Unova</button>
+		
+		<button data-tab-target="#pokemon-pokedex-kalos" id="pokedex-kalos" class="tab">Kalos</button>
+		
+		<button data-tab-target="#pokemon-pokedex-alola" id="pokedex-alola" class="tab">Alola</button>
+	</div>
+	
+</div>
+
+<div id="popup-display-all">
+	
+</div>
+<div class="logo-container">
+	<h1>P<img class="spinning-pokeball" src="images/pokeball-PNG-2d.png" alt="Spinning Pokéball">kéAPI</h1>
+	<p id="about-website">Information about every Pokémon from Generation 1-7. Click a Pokémon card for more information!</p>
+</div>
+<div id="show-loading-region">
+	<p class="loading-pokemon-text" id="kanto-remove">Kanto loading... 
+		<span class="total-kanto-pokemon"></span>
+		<span class="kanto-loading-status"></span>
+	</p>
+	<p class="loading-pokemon-text" id="johto-remove">Johto loading...
+		<span class="total-johto-pokemon"></span>
+		<span class="johto-loading-status"></span>
+	</p>
+	<p class="loading-pokemon-text" id="hoenn-remove">Hoenn loading... 
+		<span class="total-hoenn-pokemon"></span>
+		<span class="hoenn-loading-status"></span>
+	</p>
+	<p class="loading-pokemon-text" id="sinnoh-remove">Sinnoh loading...
+		<span class="total-sinnoh-pokemon"></span>
+		<span class="sinnoh-loading-status"></span>
+	</p>
+	<p class="loading-pokemon-text" id="unova-remove">Unova loading...
+		<span class="total-unova-pokemon"></span>
+		<span class="unova-loading-status"></span>
+	</p>
+	<p class="loading-pokemon-text" id="kalos-remove">Kalos loading... 
+		<span class="total-kalos-pokemon"></span>
+		<span class="kalos-loading-status"></span>
+	</p>
+	<p class="loading-pokemon-text" id="alola-remove">Alola loading... 
+		<span class="total-alola-pokemon"></span>
+		<span class="alola-loading-status"></span>
+	</p>
+</div>
+
+<div class="tab-content">
+	<div id="pokemon-pokedex-kanto" data-tab-content class="active">
+		<div id="pokedex-content-kanto" class="pokedex-content"></div>
+	</div>
+
+	<div id="pokemon-pokedex-johto" data-tab-content>
+		<div id="pokedex-content-johto" class="pokedex-content"></div>
+	</div>
+
+	<div id="pokemon-pokedex-hoenn" data-tab-content>
+		<div id="pokedex-content-hoenn" class="pokedex-content"></div>
+	</div>
+
+	<div id="pokemon-pokedex-sinnoh" data-tab-content>
+		<div id="pokedex-content-sinnoh" class="pokedex-content"></div>
+	</div>
+
+	<div id="pokemon-pokedex-unova" data-tab-content>
+		<div id="pokedex-content-unova" class="pokedex-content"></div>
+	</div>
+
+	<div id="pokemon-pokedex-kalos" data-tab-content>
+		<div id="pokedex-content-kalos" class="pokedex-content"></div>
+	</div>
+
+	<div id="pokemon-pokedex-alola" data-tab-content>
+		<div id="pokedex-content-alola" class="pokedex-content"></div>
+	</div>
+</div>
+
+<div id="footer-container">
+	<footer>&copy; 2020 Mark Gutiérrez</footer>
+</div>
+
+<script src="js/mobile-navbar.js"></script>
+<script src="js/all-fetch.js"></script>
+
+</body>
+</html>
