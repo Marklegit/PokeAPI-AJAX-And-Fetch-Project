@@ -140,7 +140,7 @@ button{
 	padding: 0px 20px;
 }
 .popup-info h2{
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 	text-transform: capitalize;
 	text-shadow: 2px 2px 4px white;
 }
@@ -340,7 +340,7 @@ Chris Coyier - http://jsfiddle.net/chriscoyier/hk6z9/1/
 */
 
 .popup-info:after {
-  animation: shine 5s ease-in-out 2s 1;
+  animation: shine 5s ease-in-out 2s infinite;
   animation-fill-mode: forwards;  
   content: "";
   position: absolute;
