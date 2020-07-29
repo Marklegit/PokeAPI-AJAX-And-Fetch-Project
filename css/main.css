@@ -408,18 +408,18 @@ Chris Coyier - http://jsfiddle.net/chriscoyier/hk6z9/1/
         100% { transform: scale(1,1)      translateY(0); }
  }
 .popup-info h3{
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin-bottom: 4px;
 	color: black;
 }
 .popup-info p{
-	font-size: 0.6rem;
+	font-size: 1rem;
 	margin-bottom: 10px;
 	color: black;
 }
 .popup-info p span{
 	color: #707070;
-	font-size: 0.6rem;
+	font-size: 1rem;
 }
 .pokemon-data-section-popup{
 	padding: 10px 0px 0px 10px;
