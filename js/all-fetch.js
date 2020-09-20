@@ -101,17 +101,6 @@ let unovaRemove = document.getElementById("unova-remove");
 let kalosRemove = document.getElementById("kalos-remove");
 let alolaRemove = document.getElementById("alola-remove");
 
-/*
-function totalStateOfLoading(i, regionTotal, regionLoadingStatus){
-	if(i === regionTotal){
-		regionLoadingStatus.style.color = "green";
-		regionLoadingStatus.innerHTML = "Complete";
-	} else {
-		regionLoadingStatus.style.color = "#666666";
-		regionLoadingStatus.innerHTML = " Loading...";
-	}
-}
-*/
 function removeLoadingIndicator(i, regionTotal, regionToRemove){
 	if (i === regionTotal){
 		let showLoadingRegion = document.getElementById("show-loading-region");
