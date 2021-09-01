@@ -25,7 +25,7 @@ function pokemonData () {
 			
 			
 			//Adds the official Artwork of a Pokémon
-			const artWorkUrl = `https://pokeres.bastionbot.org/images/pokemon/${pokemon.pokedex}.png`;
+			const artWorkUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.pokedex}.png`;
 			//Checks for the Pokédex number to label a pokemon's region | generation
 			let pokemonRegion = document.getElementById("pokemon-region");
 			if (pokemon.pokedex >= 1 && pokemon.pokedex <= 151){
